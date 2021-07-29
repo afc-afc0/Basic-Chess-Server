@@ -6,7 +6,7 @@ namespace Basic_Chess_Server.Server
 {
     public class Packet : IDisposable
     {
-        private byte[] buffer;//I will not use List because of performance 
+        private ArrayList<byte> buffer; 
 
         private int size;
         private int currentPos;
@@ -14,13 +14,13 @@ namespace Basic_Chess_Server.Server
         public Packet(int startSize)
         {
             size = startSize;
-            buffer = new byte[size];
+            buffer = new ArrayList<byte>(startSize);
             currentPos = 0;
         }
 
         public Packet(int startSize, int packetType)
         {
-            buffer = new byte[startSize];
+            buffer = new ArrayList<byte>(startSize);
             Write(packetType);
         }
 
