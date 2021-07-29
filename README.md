@@ -1,7 +1,7 @@
 # Basic-Chess-Server
 Basic Chess Server Written in C#
 
-Upon learning the Socket Programming in Computer Networking class. I wanted to apply what I learned to building an efficent online chess server in C#. I choose C# because in client-side I used Unity game engine to make it easier to serialize data. In the building process of the server I learned a lot about networking and understanding the server side.
+Upon learning the Socket Programming in Computer Networking class. I wanted to apply what I learned to building an online chess server to play chess with my friends so I built this server. I used C# because it would be easier to serialize the data and send to Unity and deserialize. 
 
 Project written in C# allows you and your friends play Chess 
 - Uses TCP-IP connections.
